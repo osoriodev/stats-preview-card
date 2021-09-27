@@ -12,6 +12,33 @@
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
-    <main class="main-section"></main>
+    <main class="main-section">
+      <div class="card">
+        <section class="card__info">
+          <h1 class="card__title">Get <span>insights</span> that help your business grow.</h1>
+          <p class="card__descrip">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+          <ul class="card__stats">
+            <li>
+              <p class="card__stats-title">10k+</p>
+              <span class="card__stats-descrip">companies</span>
+            </li>
+            <li>
+              <p class="card__stats-title">314</p>
+              <span class="card__stats-descrip">templates</span>
+            </li>
+            <li>
+              <p class="card__stats-title">12M+</p>
+              <span class="card__stats-descrip">queries</span>
+            </li>
+          </ul>
+        </section>
+        <figure class="card__img">
+          <picture>
+            <source srcset="./img/image-header-desktop.jpg" media="(min-width: 768px)">
+            <img src="./img/image-header-mobile.jpg" alt="Header image">
+          </picture>
+        </figure>
+      </div>
+    </main>
   </body>
 </html>

@@ -27,3 +27,125 @@ a {
   text-decoration: none;
   color: inherit;
 }
+/* ========== STYLES ========== */
+.main-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: grid;
+  place-items: center;
+  background-color: var(--clr-secondary-dk);
+}
+.card {
+  width: 100%;
+  max-width: 38rem;
+  height: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  background-color: var(--clr-secondary);
+}
+.card__info {
+  text-align: center;
+  padding: 3.5rem;
+}
+.card__title {
+  margin-block-end: 2rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--clr-ntrl-max);
+}
+.card__title span {
+  font: inherit;
+  color: var(--clr-primary);
+}
+.card__descrip {
+  margin-block-end: 3rem;
+  font-family: var(--ff-secondary);
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, .75);
+}
+.card__stats {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card__stats li {
+  margin-block-end: 3rem;
+  display: block;
+}
+.card__stats li:last-child {
+  margin: 0;
+}
+.card__stats-title {
+  margin-block-end: 1rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--clr-ntrl-max);
+}
+.card__stats-descrip {
+  font-family: var(--ff-secondary);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .6);
+}
+.card__img {
+  width: 100%;
+  position: relative;
+}
+.card__img::before {
+  content: '';
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(73, 19, 107, .7);
+}
+.card__img picture {
+  width: 100%;
+  display: block;
+}
+.card__img img {
+  width: 100%;
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .main-section {
+    padding: 0;
+  }
+  .card {
+    width: auto;
+    max-width: 100rem;
+    height: 40rem;
+    flex-direction: row;
+  }
+  .card__info {
+    padding: 5rem;
+    padding-inline-end: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+  }
+  .card__title {
+    font-size: 3.2rem;
+  }
+  .card__descrip {
+    margin: 0;
+  }
+  .card__stats {
+    margin-block-start: auto;
+    flex-direction: row;
+  }
+  .card__stats li {
+    margin: 0;
+    margin-inline-end: 5rem;
+  }
+  .card__img,
+  .card__img picture,
+  .card__img img {
+    width: auto;
+    height: 100%;
+  }
+}
