@@ -1,0 +1,29 @@
+:root {
+  --clr-primary: #AA5CDB;
+  --clr-secondary: #1B1938;
+  --clr-secondary-dk: #090B1A;
+  --clr-ntrl-max: #FFF;
+  --ff-primary: 'Inter', sans-serif;
+  --ff-secondary: 'Lexend Deca', sans-serif;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--ff-primary);
+  font-size: 1.6rem;
+  line-height: 1.1;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
